@@ -1,0 +1,8 @@
+W pliku dane1.txt
+ 1. dwie pierwsze liczby to odpowiednio: ilość wierzchołków i krawędzi
+ 2. każda kolejna para to  wierzchołki sąsiadujące ze sobą.
+
+ W pliku dane2.txt
+ 1. pierwszy wiersz to lista sąsiadów wierzchołka nr 0
+ 2. drugi wiersz to lista sąsiadów wierzchołka nr 1
+ itd.
