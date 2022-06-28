@@ -9,7 +9,6 @@ import java.util.Scanner;
 public class RunDijkstra implements Run {
     public static void run() throws FileNotFoundException {
 
-        final int inf = Integer.MAX_VALUE;
         WeightedGraph graph = new WeightedGraph();
         graph.read("files\\daneWaga.txt");
         graph.show();
@@ -22,5 +21,7 @@ public class RunDijkstra implements Run {
             System.out.print("Do którego wierzchołka chcesz dotrzeć? Wpisz liczbę od 1 do "+ (graph.getSize() - 1)+": ");
             stopVertex = scanner.nextInt();
         } while (stopVertex < 1 || stopVertex > graph.getSize() - 1);
+        graph.dijkstra(startVertex, stopVertex);
     }
+
 }
