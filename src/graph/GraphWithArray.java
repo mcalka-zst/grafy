@@ -7,7 +7,7 @@ import java.util.Deque;
 import java.util.Scanner;
 import java.util.Stack;
 
-public class GraphWithArray {
+public class GraphWithArray implements Graph {
 
     private int[][] graph; //tablica sąsiedztwa
     private int numberOfVertices = 0;//ilość wierzchołków

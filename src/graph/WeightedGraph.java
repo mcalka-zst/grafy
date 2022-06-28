@@ -9,6 +9,8 @@ public class WeightedGraph {
     private ArrayList<ArrayList<Neighbour>> graph = new ArrayList<>(); //lista sąsiedztwa
     private int size = 0;//ustalana podczas wczytywania grafu
 
+
+
     //------------------------------------------------
     public void read(String path) throws FileNotFoundException {
         File fileIn = new File(path);
@@ -28,6 +30,7 @@ public class WeightedGraph {
             graph.get(number).add(new Neighbour(neighbour, weight));
 
         }
+        this.size = this.graph.size();
 
     }
 
@@ -35,6 +38,13 @@ public class WeightedGraph {
         for (int i = 0; i < this.graph.size(); i++) {
             System.out.println("Sąsiedzi wierzchołka " + i + ": " + graph.get(i));
         }
+
+    }
+    public int getSize() {
+        return this.size;
+    }
+
+    public void dijkstra(int startVertex){
 
     }
 

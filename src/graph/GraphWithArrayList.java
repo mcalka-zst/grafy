@@ -4,7 +4,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.*;
 
-public class GraphWithArrayList {
+public class GraphWithArrayList implements Graph{
     private ArrayList<ArrayList<Integer>> graph = new ArrayList<>(); //lista sąsiedztwa
     private int size = 0;//ustalana podczas wczytywania grafu
 

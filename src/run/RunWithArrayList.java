@@ -5,7 +5,7 @@ import graph.GraphWithArrayList;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
-public class RunWithArrayList {
+public class RunWithArrayList implements Run {
     public static  void run() throws FileNotFoundException {
         GraphWithArrayList graph = new GraphWithArrayList();
         graph.read("files\\dane2.txt");
