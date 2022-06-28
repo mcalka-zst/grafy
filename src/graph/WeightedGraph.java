@@ -71,7 +71,7 @@ public class WeightedGraph implements Graph {
                 neighboursTemp.add(neighbour);
                 prev.set(neighbour.getNumber(), startVertex);//oznaczamy poprzedni wierzchołek (np. dla wierzchołka 1 poprzednikiem był 0)
             }
-            Pair min = findMin(costs);
+            Pair min = findMin(costs);//???????????????
 
             s.add(startVertex); //przenosimy bieżacy wierzchołek z q do s (z dokładniej ich numery)
             q.remove(startVertex);
