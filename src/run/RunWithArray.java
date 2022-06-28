@@ -6,7 +6,7 @@ import java.io.FileNotFoundException;
 import java.util.Scanner;
 
 public class RunWithArray {
-    public static void main(String[] args) throws FileNotFoundException {
+    public static void run() throws FileNotFoundException {
         GraphWithArray graph = new GraphWithArray();
         graph.read("dane1.txt");
         graph.show();
