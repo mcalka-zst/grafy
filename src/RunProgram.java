@@ -5,7 +5,7 @@ import run.RunWithArrayList;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
-public class Run {
+public class RunProgram {
     public static void main(String[] args) throws FileNotFoundException {
         Scanner scanner = new Scanner(System.in);
         while (true) {
