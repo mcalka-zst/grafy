@@ -8,7 +8,7 @@ import java.util.Scanner;
 public class RunWithArray {
     public static void run() throws FileNotFoundException {
         GraphWithArray graph = new GraphWithArray();
-        graph.read("dane1.txt");
+        graph.read("files\\dane1.txt");
         graph.show();
         Scanner scanner = new Scanner(System.in);
         int startVertex;

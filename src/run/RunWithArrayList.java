@@ -8,7 +8,7 @@ import java.util.Scanner;
 public class RunWithArrayList {
     public static  void run() throws FileNotFoundException {
         GraphWithArrayList graph = new GraphWithArrayList();
-        graph.read("dane2.txt");
+        graph.read("files\\dane2.txt");
         graph.show();
 
         Scanner scanner = new Scanner(System.in);
