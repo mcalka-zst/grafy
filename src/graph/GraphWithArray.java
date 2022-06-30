@@ -7,6 +7,9 @@ import java.util.Deque;
 import java.util.Scanner;
 import java.util.Stack;
 
+/**
+ * @author Mirosłw Całka
+ */
 public class GraphWithArray implements Graph {
 
     private int[][] graph; //tablica sąsiedztwa
@@ -15,6 +18,11 @@ public class GraphWithArray implements Graph {
     //ustalana podczas wczytywania grafu
 
     //------------------------------------------------
+    /**
+     * Metoda wczytujaca graf jako macierz sasiedztwa
+     * @param path
+     * @throws FileNotFoundException
+     */
     public void read(String path) throws FileNotFoundException {
         File fileIn = new File(path);
         Scanner in = new Scanner(fileIn);
@@ -51,6 +59,11 @@ public class GraphWithArray implements Graph {
     }
 
     //------------------------------------------------
+
+    /**
+     * Metoda wyświetlajaca wierzchołki grafu odwiedzone przy przeszukiwaniu grafu wszerz
+     * @param startVertex
+     */
     public void bfs(int startVertex) {
         System.out.print("\nKolejność odwiedzania w BFS: ");
         Boolean[] visited = new Boolean[numberOfVertices];
@@ -74,6 +87,10 @@ public class GraphWithArray implements Graph {
     }
 
     //------------------------------------------------
+    /**
+     * Metoda wyświetlajaca wierzchołki grafu odwiedzone przy przeszukiwaniu grafu w głąb
+     * @param startVertex
+     */
     public void dfs(int startVertex) {
         System.out.print("\nKolejność odwiedzania w DFS: ");
         Boolean[] visited = new Boolean[numberOfVertices];
