@@ -1,5 +1,8 @@
 package graph;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+
 /**
  * Klasa opisujaca wierzchołek grafu ważonego
  * Zawiera numer wierzchołka, koszt dojścia do niego oraz nt wierzchołka poprzedniego
@@ -42,6 +45,8 @@ public class Vertex {
     }
     @Override
     public String toString(){
-        return number+", "+cost+" "+prev;
+        return "\nWierzchołek: "+number+", koszt dotarcia: "+cost+", wierzchołek poprzedni "+prev;
     }
+
+
 }

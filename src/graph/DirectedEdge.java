@@ -7,16 +7,16 @@ package graph;
  * @author Mirosłw Całka
  */
 public class DirectedEdge {
-    private int startVertex;
-    private int stopVertex;
+    private int begin;
+    private int end;
     private int weight;
 
-    public int getStartVertex() {
-        return startVertex;
+    public int getBegin() {
+        return begin;
     }
 
-    public int getStopVertex() {
-        return stopVertex;
+    public int getEnd() {
+        return end;
     }
 
     public int getWeight() {
@@ -24,14 +24,16 @@ public class DirectedEdge {
     }
 
     public DirectedEdge(int startVertex, int stopVertex, int weight) {
-        this.startVertex = startVertex;
-        this.stopVertex = stopVertex;
+        this.begin = startVertex;
+        this.end = stopVertex;
         this.weight = weight;
     }
 
     @Override
     public String toString() {
 
-        return "[start: " + startVertex + ", stop: " + stopVertex+ ", waga: "+weight+"]";
+        return "[start: " + begin + ", stop: " + end + ", waga: "+weight+"]";
     }
+
+
 }
