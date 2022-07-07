@@ -13,7 +13,7 @@ public class RunDijkstra implements Run {
         graph.show();
 
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Wpisz numer wierzchołka od którego starujemy: ");
+        System.out.print("Wpisz numer wierzchołka od którego starujemy: ");
         int startVertex = scanner.nextInt() ;
 
         System.out.println("\nStartujemy od wierzchołka "+startVertex);
