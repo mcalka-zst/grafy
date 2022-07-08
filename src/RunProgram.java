@@ -13,7 +13,7 @@ public class RunProgram {
             System.out.println("1. Przeszukiwanie grafu BFS i DFS z macierzą sąsiedztwa");
             System.out.println("2. Przeszukiwanie grafu BFS i DFS z listą sąsiadów");
             System.out.println("3. Algorytm Dijkstry");
-            System.out.println("5. Zakończ");
+            System.out.println("4. Zakończ");
             int choice = scanner.nextInt();
             System.out.println("-------------------------------------------------------------");
             switch (choice) {
@@ -26,7 +26,7 @@ public class RunProgram {
                 case 3:
                     RunDijkstra.run();
                     break;
-                case 5:
+                case 4:
                     System.exit(0);
                 default:break;
             }
